@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hello 1</p>
+    <p>Hello 2</p>
+    <p>Hello 3</p>
+    <p id="p4">Hello 4</p>
+    <p>Hello 5</p>
+    <div>Hello world</div>
+    <button>Click</button>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+<script>
+   $('document').ready(function() {
+    // $('#p4').hide()
+
+    $('button').click(function() {
+      alert('text :' + $('div').text())
+    })
+
+    // $('p').dblclick(function() {
+    //   $('p:last').hide()
+    // }) 
+
+    $('#p4').on({
+      click: function() {
+        console.log('thank you for cancelling')
+      },
+      mouseleave: function() {
+        console.log('mouse leave')
+      }
+    }
+    )
+
+  })
+</script>
+  </html>
